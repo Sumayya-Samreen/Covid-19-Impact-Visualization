@@ -1,6 +1,5 @@
 # Covid-19 Impact Visualization
 
-**Overview**
 An interactive Python dashboard for analyzing the global impact of the COVID-19 pandemic. The project collects, cleans, and visualizes COVID-19 case data, deaths, recoveries, and mobility trends, providing actionable insights over time.
 
 ## Datasets
@@ -85,30 +84,6 @@ jupyter notebook covid19_impact_visualization.ipynb
 > * GitHub does not render interactive Plotly/Folium charts. Static PNG versions are provided for preview. For full interactivity, run the notebook locally.
 > * Make the notebook trusted in Jupyter (File → Trust Notebook) to properly load maps.
 > * `clean_widget.py` is included for GitHub deployment previews and modular static visualization. It is not required to run the notebook locally.
-
-## Recommended Git Ignore for this Project
-
-```
-# Python virtual environment
-.venv/
-
-# Python cache and compiled files
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-
-# Jupyter notebook checkpoints
-.ipynb_checkpoints/
-
-# Logs and temp files
-*.log
-*.tmp
-.env
-.DS_Store
-```
-
-> Large dataset files are intentionally not ignored since they are required for this project.
 
 ## Pro Tip for Recruiters or Collaborators
 
