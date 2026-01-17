@@ -1,20 +1,16 @@
-# COVID-19 Impact Visualization Dashboard
+# Covid-19 Impact Visualization
 
 **Overview**
 An interactive Python dashboard for analyzing the global impact of the COVID-19 pandemic. The project collects, cleans, and visualizes COVID-19 case data, deaths, recoveries, and mobility trends, providing actionable insights over time.
 
----
-
-## **Datasets**
+## Datasets
 
 1. **Global Time-Series Deaths (`time_series_covid19_deaths_global.csv`)** – Daily COVID-19 deaths by country.
 2. **Global Time-Series Confirmed Cases (`time_series_covid19_confirmed_global.csv`)** – Daily confirmed COVID-19 cases.
 3. **Country Summary (`cases_country.csv`)** – Aggregated statistics: confirmed, deaths, recovered, active cases, and mortality rate.
 4. **Mobility Trends (`changes-visitors-covid.csv`)** – Sector-wise changes in human movement (retail, workplaces, parks, transit, residential).
 
----
-
-## **Features**
+## Features
 
 * Interactive and static visualizations of confirmed, deaths, recovered, and active cases.
 * Choropleth maps showing global mobility changes across multiple sectors.
@@ -23,9 +19,7 @@ An interactive Python dashboard for analyzing the global impact of the COVID-19 
 * Real-time trend analysis with interactive Plotly and Folium visualizations.
 * Full end-to-end data pipeline: cleaning, preprocessing, visualization.
 
----
-
-## **Methods & Analysis**
+## Methods and Analysis
 
 1. **Data Loading & Exploration** – Inspect datasets, identify missing values, and ensure data consistency.
 2. **Data Cleaning** – Handle missing values via interpolation, remove unnecessary columns, and unify country names.
@@ -36,18 +30,22 @@ An interactive Python dashboard for analyzing the global impact of the COVID-19 
    * Pie charts for country-level distribution of confirmed, deaths, recovered, and active cases.
    * Interactive dashboards for deeper exploration of trends over time.
 
----
-
-## **Key Findings**
+## Key Findings
 
 * The United States, India, and Brazil had the highest confirmed cases.
 * India and Brazil showed the highest recovery trends during the studied period.
 * Mobility data reflected large-scale lockdowns and reductions in retail and workplace activity.
 * Interactive visualizations provide valuable insight into temporal and spatial patterns of the pandemic.
 
----
+## Dependencies
 
-## **Dependencies**
+Install dependencies using the provided requirements file:
+
+```bash
+pip install -r requirements.txt
+```
+
+Contents of **requirements.txt**:
 
 ```text
 pandas==2.3.3
@@ -56,17 +54,12 @@ matplotlib==3.10.6
 plotly==5.23.1
 ipywidgets==8.2.0
 folium==0.16.0
+pycountry==23.12.11
+ipython==8.29.0
+jupyter==1.1.1
 ```
 
-Install dependencies using:
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
-## **How to Run the Notebook**
+## How to Run the Notebook
 
 1. Clone the repository:
 
@@ -87,16 +80,39 @@ pip install -r requirements.txt
 jupyter notebook covid19_impact_visualization.ipynb
 ```
 
-> **Note:**
+> **Note**
 >
 > * GitHub does not render interactive Plotly/Folium charts. Static PNG versions are provided for preview. For full interactivity, run the notebook locally.
-> * `clean_widget.py` was added for GitHub deployment previews and modular static visualization. It is not required to run the notebook locally.
+> * Make the notebook trusted in Jupyter (File → Trust Notebook) to properly load maps.
+> * `clean_widget.py` is included for GitHub deployment previews and modular static visualization. It is not required to run the notebook locally.
 
----
+## Recommended Git Ignore for this Project
 
-## **Pro Tip for Recruiters / Collaborators**
+```
+# Python virtual environment
+.venv/
 
-This project demonstrates a full data science workflow: from data collection, cleaning, and preprocessing to interactive visualization and comparative analysis. It highlights skills in:
+# Python cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Logs and temp files
+*.log
+*.tmp
+.env
+.DS_Store
+```
+
+> Large dataset files are intentionally not ignored since they are required for this project.
+
+## Pro Tip for Recruiters or Collaborators
+
+This project demonstrates a complete data science workflow from raw data collection to interactive visualization. It highlights skills in:
 
 * Python data analysis and visualization
 * Pandas, Plotly, Folium, Matplotlib
@@ -104,11 +120,9 @@ This project demonstrates a full data science workflow: from data collection, cl
 * Interactive dashboards
 * Data-driven decision support
 
-A strong portfolio example for roles in **data science, AI engineering, or analytics**.
+It is a strong portfolio example for roles in **data science, AI engineering, or analytics**.
 
----
+## Author
 
-## **Author**
-
-**Sumayya Samreen — M.Sc. in Artificial Intelligence**
+**Sumayya Samreen, M.Sc. in Artificial Intelligence**
 Passionate about applied AI, interactive data visualization, and deriving insights from complex datasets.

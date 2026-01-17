@@ -1,5 +1,6 @@
-# Python virtual environment
+# Python virtual environments
 .venv/
+.env
 
 # Python cache and compiled files
 __pycache__/
@@ -7,9 +8,9 @@ __pycache__/
 *.pyo
 *.pyd
 
-# Jupyter notebook checkpoints
+# Jupyter Notebook checkpoints
 .ipynb_checkpoints/
 
-# Logs and temp files
+# Logs and temporary files
 *.log
 *.tmp
