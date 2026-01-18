@@ -99,4 +99,4 @@ It is a strong portfolio example for roles in **data science, AI engineering, or
 
 ## Author
 **Sumayya Samreen — M.Sc. in Artificial Intelligence**<br>
-Passionate about applied AI, interactive data visualization, and deriving insights from complex datasets.
+Focused on developing practical Python-based data analysis and visualization solutions, integrating interactive plots, geospatial mapping, and time-series trend analysis to extract meaningful insights from complex datasets.
