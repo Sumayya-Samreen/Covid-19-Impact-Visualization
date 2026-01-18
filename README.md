@@ -98,6 +98,5 @@ This project demonstrates a complete data science workflow from raw data collect
 It is a strong portfolio example for roles in **data science, AI engineering, or analytics**.
 
 ## Author
-
-**Sumayya Samreen, M.Sc. in Artificial Intelligence**
+**Sumayya Samreen — M.Sc. in Artificial Intelligence**<br>
 Passionate about applied AI, interactive data visualization, and deriving insights from complex datasets.
